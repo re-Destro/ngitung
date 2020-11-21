@@ -1,6 +1,6 @@
  //ketikan
 
-  var text="BANTU FOLLOW IG AING BRO... @MWMAULANA310";
+  var text="BANTU FOLLOW IG AING BRO...";
     var delay=100;
     let currentChar=1;
     var destination="[none]";
