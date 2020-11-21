@@ -6,10 +6,9 @@
     var destination="[none]";
     function type()
     {
-    //if (document.all)
     {
     var dest=document.getElementById(destination);
-    if (dest)// && dest.innerHTML)
+    if (dest)
     {
     dest.innerHTML=text.substr(0, currentChar)+"<blink>_</blink>";
     currentChar++;
@@ -33,4 +32,6 @@
     destination=destinationParam;
     type();
     }
+
+
 
