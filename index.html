@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WEB PENGHITUNG HARGA SAMPAH</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		alert("WELCOME DUDE!")
+	</script>
+</head>
+<body>
+<center>
+	<h1>WEB PENGHITUNG HARGA SAMPAH SEDERHANA</h1>
+	<b>
+<p>	INI ADALAH CONTOH WEB SEDERHANA YANG SAYA BUAT</p>
+<p>	WEB INI AKAN MENGITUNG HARGA SAMPAH SESUAI DENGAN DATA YANG KALIAN KIRIM</p>
+<div id="ucapan" class="anjayani"></div>
+<script>
+		var i = new Date();
+			var jam = i.getHours();
+			if (jam <=3){
+				let jon = "JANGAN LUPA TIDUR BRO!"
+				document.getElementById("ucapan").innerHTML = jon;
+			}else if(jam>=4 && jam<=10){
+				let jon = "SELAMAT PAGI!"
+				document.getElementById("ucapan").innerHTML = jon;
+			}else if(jam>=11 && jam <=14){
+				let jon = "SELAMAT SIANG!"
+				document.getElementById("ucapan").innerHTML = jon;
+			}else if(jam>=15 && jam <=18){
+				let jon = "SELAMAT SORE!"
+				document.getElementById("ucapan").innerHTML = jon;
+			}else{
+				let jon = "SELAMAT MALAM!"
+				document.getElementById("ucapan").innerHTML = jon;
+			}
+</script>
+<hr></b>
+</center>
+<br><div style="text-align: center;">
+<script src="./javas.js"></script>
+<b><div id="textDestination"  style="background-color: #000000; style=" font: 20px arial; color: #4bff14; margin: 0px;></div></b>
+<!--UNTUK MULAI MENGETIK-->
+  <script language="JavaScript">
+    javascript:startTyping(text, 70, "textDestination");
+    </script></div>	
+    <center>
+   <div class="sampah">
+
+   	<form name="sampah">
+   		<p><label><b>Masukkan berat sampah(kg)</b></label>
+   		<input type="number" name="berat" id="bersam" value="">
+   		<br><br>
+   		<label><b>Pilih jenis sampah</b></label><br>
+   		<select name="jenis" id="jenis">
+   			<option value="Daun">Daun</option>
+   			<option value="Kaca">Kaca</option>
+   			<option value="Besi">Besi</option>
+   			<option value="Botol1">Botol plastik</option>
+   			<option value="Botol2">Botol kaca</option>
+   			<option value="Hpr">Hp Rusak</option>
+   		</select></p><br>
+   		<input type="button" value="submit" onclick="doit()" class="tombol"><br><br>
+   		<p><b>HASIL PENDAPATAN</b></p>
+   		Rp.<input type="text" name="hasil" id="hasil" value="" class="hasilnyo" readonly>
+   	</form>
+   </div> 
+    </center><center>
+    <a href="https://re-destro.github.io/dahlah">KLIK TEKS INI</a></center>
+    <script>
+   			
+   			function doit(){
+   				var berat1 = document.getElementById('bersam').value;
+   				var jenis1 = document.getElementById("jenis").value;
+   		if(berat1 == ""){
+   			alert("MASUKKAN BERATNYA BOI!!!")
+   		}else{
+   		if(jenis1 === "Daun"){
+   			var harga_daun = 2000;
+   			let pendapatan ="Rp. " + harga_daun * berat1;
+   			document.getElementById("hasil").value=pendapatan; 
+   		}else if(jenis1 === "Kaca"){
+   			var harga_kaca = 5000;
+   			let pendapatan ="Rp. " + harga_kaca * berat1;
+   			document.getElementById("hasil").value=pendapatan; 
+   		}else if(jenis1 === "Besi"){
+   			var harga_besi = 8000;
+   			let pendapatan ="Rp. " + harga_besi * berat1;
+   			document.getElementById("hasil").value=pendapatan; 
+   		}else if(jenis1 === "Botol1"){
+   			var harga_toltik = 3000;
+   			let pendapatan ="Rp. " + harga_toltik * berat1;
+   			document.getElementById("hasil").value=pendapatan; 
+   		}else if(jenis1 === "Botol2"){
+   			var harga_tolca = 7000;
+   			let pendapatan ="Rp. " + harga_tolca * berat1;
+   			document.getElementById("hasil").value=pendapatan; 
+   		}
+   		else{
+   			var harga_hpr = 20000;
+   			let pendapatan ="Rp. "+harga_hpr * berat1;
+   			document.getElementById("hasil").value=pendapatan; 
+   		}
+  	 	}
+   		}
+   		</script>
+   		<div class="textgambar">
+        <h3>MWMAULANA310</h3>
+    </div>
+    <center> 
+    	<h4>Waktu:</h4>
+    	<div class="INIJAM">
+	<div class="box1">
+		<p id="jam"></p>
+	</div>
+	<div class="box2">
+		<p id="menit"></p>
+	</div>
+	<div class="box3">
+		<p id="detik"></p>
+	</div>
+</div>
+    </center>
+    <script>
+    window.setTimeout("ikijam()", 1000);
+	function ikijam() {
+		var waktu = new Date();
+		setTimeout("ikijam()", 1000);
+		document.getElementById("jam").innerHTML = waktu.getHours();
+		document.getElementById("menit").innerHTML = waktu.getMinutes();
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+	}
+		
+
+    </script>
+</body>
+</html>

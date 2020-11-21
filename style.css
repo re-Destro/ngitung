@@ -48,3 +48,62 @@ label {
   border: 0;
   padding: 5px 8px;
 }
+.anjayani {
+ font-family: Arial Black;
+  size : 20px;
+  -webkit-text-stroke: 1px blue;
+  color : white;
+}
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Righteous&display=swap');
+.wrapper {
+     width: 50%;
+     margin: 0 auto;
+     text-align: center;
+     background: url('berries.jpg') 0 0;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}    
+h3 {
+  font-size: 12pt; 
+  font-family: 'Righteous', 
+  cursive;
+  text-align: center;
+}
+.INIJAM {
+    overflow: hidden;
+    width: 330px;
+    margin: 20px auto;
+    border: 5px solid #efefef;
+  }
+  .box1{
+    float: left;
+    width: 110px;
+    height: 100px;
+    background-color: #189fff;
+  }
+   .box2{
+    float: left;
+    width: 110px;
+    height: 100px;
+    background-color: #189fff;
+  } 
+  .box3{
+    float: left;
+    width: 110px;
+    height: 100px;
+    background-color: #189fff;
+  }
+  .INIJAM p {
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  h4 {
+    font-size: 12pt; 
+  font-family: 'Righteous', 
+  cursive;
+  text-align: center;
+  color: blue;
+  -webkit-text-stroke : 1px black;
+  }
